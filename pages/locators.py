@@ -4,6 +4,10 @@ class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     BASKET_LINK = (By.CSS_SELECTOR, ".basket-mini .btn-default")
 
+class BasketPageLocators():
+    EMPTY_BASKET = (By.XPATH, "//p[contains(text(), 'empty')]")
+    PRODUCTS_IN_BASKET = (By.CSS_SELECTOR, "#basket-items")
+
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
