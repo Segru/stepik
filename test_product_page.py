@@ -20,7 +20,6 @@ class TestUserAddToBasketFromProductPage():
         email = str(time.time()) + "@fakemail.org"
         password = "qwerty54321"
         self.page.register_new_user(email, password)
-        #self.
 
 
     @pytest.mark.need_review
@@ -29,7 +28,6 @@ class TestUserAddToBasketFromProductPage():
         test_link = link
         page = ProductPage(browser, test_link)
         page.open()
-        #time.sleep(30)
         page.should_be_authorized_user()
         page.should_not_be_success_message()
         page.should_be_product_page()
